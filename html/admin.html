@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+  <header>
+    <h1>Stitch</h1>
+    <h1>Admin Dashboard</h1>
+    <nav>
+      <a href="../home.html">Home</a>
+    </nav>
+  </header>
+  <div id="dashboard">
+    <div class="nav2">
+      <button class="nav-button" data-section="users">User Management</button>
+      <button class="nav-button" data-section="products">Product Management</button>
+      <button class="nav-button" data-section="orders">Order Management</button>
+    </div>
+
+    <section id="admin" class="section">
+      <h2>Admin Info</h2>
+      <table id="admin-table"></table>
+    </section>
+    
+    <section id="users" class="section">
+      <div id="edit-user-form" style="display: none;">
+        <h3>Edit User</h3>
+        <label for="edit-user-name">Name:</label>
+        <input type="text" id="edit-user-name" />
+        <label for="edit-user-email">Email:</label>
+        <input type="email" id="edit-user-email" />
+        <label for="edit-user-role">Role:</label>
+        <input type="text" id="edit-user-role" />
+        <label for="edit-user-status">Status:</label>
+        <input type="text" id="edit-user-status" />
+        <button id="save-user-button">Save Changes</button>
+      </div>
+      <h2>User Management</h2>
+      <input type="text" id="search-users" placeholder="Search Users..." />
+      <table id="users-table"></table>
+    </section>
+
+    <section id="products" class="section">
+      <h2>Product Management</h2>
+      <input type="text" id="search-products" placeholder="Search Products..." />
+      <table id="products-table"></table>
+    </section>
+
+    <section id="orders" class="section">
+      <h2>Order Management</h2>
+      <input type="text" id="search-orders" placeholder="Search Orders..." />
+      <table id="orders-table"></table>
+    </section>
+  </div>
+
+  <script src="../js/admin.js"></script>
+  
+</body>
+
+</html>

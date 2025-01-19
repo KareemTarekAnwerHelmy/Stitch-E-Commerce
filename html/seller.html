@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/seller.css">
+</head>
+<body>
+    <header>
+        <h1>Stitch</h1>
+        <h1>Seller Dashboard</h1>
+        <nav>
+            <a href="../home.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <section id="product-management">
+            <h2>Product Management</h2> 
+
+            <form id="add-product-form">
+                <input type="text" id="product-name" placeholder="Product Name" required>
+                <input type="number" id="product-price" placeholder="Price" step="0.01" required>
+                <input type="text" id="product-category" placeholder="Category" required>
+                <input type="file" id="product-image" accept="image/*" required>
+                <button type="submit">Add Product</button>
+            </form>
+            
+            <form id="edit-product-form" class="edit-form">
+                <h3>Edit Product</h3>
+                <input type="hidden" id="edit-product-id">
+                <input type="text" id="edit-product-name" placeholder="Product Name" required>
+                <input type="number" id="edit-product-price" placeholder="Price" step="0.01" required>
+                <input type="text" id="edit-product-category" placeholder="Category" required>
+                <input type="file" id="edit-product-image" accept="image/*">
+                <button type="submit">Update Product</button>
+                <button type="button" onclick="cancelEdit()">Cancel</button>
+            </form>
+
+            <div id="message"></div>
+            <div id="product-list" class="product-grid"></div>
+        </section>
+
+        <section id="order-management">
+            <h2>Order Management</h2>
+            <div id="order-list" class="order-grid"></div>
+        </section>
+    </main>
+    <script src="../js/seller.js"></script>
+</body>
+</html>

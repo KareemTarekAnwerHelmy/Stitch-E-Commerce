@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+    <header>
+        <h1>Stitch</h1>
+        <nav>
+            <a href="../home.html">Home</a>
+        </nav>
+    </header>
+
+    <div class="cart-container">
+        <h1>Your Shopping Cart</h1>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div class="cart-summary">
+            <h2>Cart Totals</h2>
+            <p>Subtotal: <span id="subtotal">$0.00</span></p>
+            <p>Shipping: <span id="shipping">$5.00</span></p>
+            <p><strong>Total: <span id="total">$5.00</span></strong></p>
+        </div>
+        <button id="checkout-btn">Proceed to Checkout</button>
+    </div>
+    <div id="receipt-modal" class="receipt-modal">
+        <div class="receipt-content">
+            <span class="close-receipt">&times;</span>
+            <div class="receipt-header">
+                <h2>Stitch</h2>
+                <p>Purchase Receipt</p>
+                <p id="receipt-date"></p>
+            </div>
+            <div class="receipt-items" id="receipt-items"></div>
+            <div class="receipt-total">
+                <p>Subtotal: <span id="receipt-subtotal"></span></p>
+                <p>Shipping: <span id="receipt-shipping"></span></p>
+                <p><strong>Total: <span id="receipt-total"></span></strong></p>
+            </div>
+            <button class="print-btn" onclick="window.print()">Print Receipt</button>
+        </div>
+    </div>
+ 
+    <script src="/js/cart.js"></script>
+</body>
+</html>

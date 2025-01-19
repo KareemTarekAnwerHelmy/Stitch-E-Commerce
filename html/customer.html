@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Page</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/customer.css">
+</head>
+<body>
+    <header>
+        <h1>Stitch</h1>
+        <div class="search-bar">
+            <input type="text" id="search-bar" placeholder="Search for products...">
+        </div>
+        <nav>
+                <a href="home.html">Home</a>
+                <a href="#profile">My Account</a>
+                <a href="#footer-container">About</a>
+                <a href="#footer-container">Contact</a>
+                <a href="cart.html" id="cart-link">
+                    Cart <span id="cart-counter">0</span></a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="profile">
+            <h2>Account Management</h2>
+            <form id="account-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit">Update Profile</button>
+            </form>
+            <button id="view-orders">View Order History</button>
+        </section>
+
+        <section id="shop">
+            <h2>Shop Products</h2>
+            <input type="text" id="search" placeholder="Search for products...">
+            <button id="search-btn">Search</button>
+
+            <div id="product-list">
+            </div>
+        </section>
+
+        <!-- <section id="cart">
+            <h2>My Cart</h2>
+            <div id="cart-items">
+            </div>
+            <button id="checkout">Proceed to Checkout</button>
+        </section> -->
+
+        <section id="wishlist">
+            <h2>My Wishlist</h2>
+            <div id="wishlist-items">
+            </div>
+        </section>
+
+        <section id="reviews">
+            <h2>Reviews and Ratings</h2>
+            <textarea id="review-text" placeholder="Write your review..."></textarea>
+            <br>
+            <label for="rating">Rating:</label>
+            <select id="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br>
+            <button id="submit-review">Submit Review</button>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-container" class="footer-container">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:support@stitch.com">support@stitch.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+201060642633</a></p>
+                <p>Address: 23 july Shraton Street, Cairo City </p>
+            </div>
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Stitch is your one-stop destination for trendy clothing and accessories. </p>
+                <p> Our mission is to make fashion accessible to everyone, everywhere.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <p>
+                    <a href="#" target="_blank">Facebook</a> |
+                    <a href="#" target="_blank">Instagram</a> |
+                    <a href="#" target="_blank">Twitter</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Stitch. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script src="../js/customer.js"></script>
+</body>
+</html>

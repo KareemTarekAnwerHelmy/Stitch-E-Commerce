@@ -1,0 +1,175 @@
+
+.cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: left;
+}
+
+.cart-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-item img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.product-quantity {
+    width: 50px;
+    padding: 5px;
+}
+
+.product-total {
+    font-weight: bold;
+}
+
+.remove-item {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.cart-summary h2 {
+    margin-bottom: 15px;
+}
+
+.cart-summary p {
+    margin: 5px 0;
+}
+
+#checkout-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-item:hover {
+    background-color: #e60000;
+}
+
+@media (max-width: 600px) {
+    .cart-table {
+        font-size: 14px;
+    }
+}
+.receipt-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.receipt-content {
+    position: relative;
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.receipt-header {
+    text-align: center;
+    border-bottom: 2px dashed #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.receipt-items {
+    margin: 20px 0;
+}
+
+.receipt-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.receipt-total {
+    border-top: 2px dashed #ccc;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.close-receipt {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #666;
+}
+
+.print-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.print-btn:hover {
+    background-color: #45a049;
+}
+
+@media print {
+    .receipt-modal {
+        position: static;
+        background: none;
+    }
+    .receipt-content {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+    .close-receipt, .print-btn {
+        display: none;
+    }
+}

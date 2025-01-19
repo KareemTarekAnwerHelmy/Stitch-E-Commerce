@@ -1,0 +1,116 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    background: linear-gradient(120deg, #f8f9fa, #f1f1f1);
+}
+
+.main .content {
+    max-width: 45%;
+}
+
+.main .content h1 {
+    font-size: 3rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.main .content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.main .content a {
+    padding: 12px 25px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+
+.main .content a:hover {
+    background: #0056b3;
+}
+
+.main img {
+    max-width: 60%;
+    height: auto;
+}
+
+.products {
+    background: #fff;
+    padding: 40px 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fafafa;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product:hover img {
+    transform: scale(1.5);
+}
+
+.product h3 {
+    font-size: 1.3rem;
+    margin: 15px 10px 5px;
+    color: #333;
+}
+
+.product p {
+    font-size: 1.1rem;
+    color: #777;
+    margin: 5px 10px 15px;
+}
+
+.product a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #2fb12b;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.product a:hover {
+    background: #1a1a1a;
+}
+
+
+#cart-counter {
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    margin-left: 5px;
+}

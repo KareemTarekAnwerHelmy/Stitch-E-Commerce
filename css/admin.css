@@ -1,0 +1,79 @@
+#dashboard {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background: #1a1a1a;
+  color: white;
+}
+
+button {
+  padding: 16px 24px;
+  background: #2fb12b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+button:hover {
+  background: #ff0000;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.nav2{
+  width: 600px;
+  margin: auto;
+
+}
+
+input[type="text"]{
+padding: 12px 44px;
+border-radius: 12px;
+font-size: 16px;
+}
+.logo {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.logo-image {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  MARGIN-LEFT: -680px;
+}
